@@ -42,9 +42,9 @@ def convert_cobdata2csv(input_copybook, input_datafile, output_datafile):
 def main():
 
     ## Convert TEST.EMP.RECORD.FILE.dat to csv using copybook EMPREC01.cpy
-    input_copybook = os.path.join(project_dir, 'mfdata', 'copybook', 'EMPREC01.cpy')
-    input_datafile = os.path.join(project_dir, 'mfdata', 'input', 'TEST.EMP.RECORD.FILE.dat')
-    output_datafile = os.path.join(project_dir, 'mfdata', 'output', 'TEST.EMP.RECORD.FILE.csv')
+    input_copybook = os.path.join(project_dir, 'C:\PythonProjects\unlock-mainframe-data-files-on-aws\run_anywhere\mfdata\copybook\AFMLIST.cpy', 'copybook', 'AFMLIST.cpy')
+    input_datafile = os.path.join(project_dir, 'C:\PythonProjects\AFMLIST.txt', 'input', 'TEST.EMP.RECORD.FILE.dat')
+    output_datafile = os.path.join(project_dir, 'C:\PythonProjects', 'output', 'TEST.EMP.RECORD.FILE.csv')
     convert_cobdata2csv(input_copybook, input_datafile, output_datafile)
 
     return
