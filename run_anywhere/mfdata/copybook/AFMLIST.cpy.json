@@ -1,0 +1,68 @@
+{
+    "AFMLIST": {
+        "0": {
+            "data_name": "EMP-RECORD",
+            "group": true,
+            "level": "01",
+            "level_depth_9": 1,
+            "level_depth_x": "01",
+            "lrecl_max": 250,
+            "offset": 0
+        },
+        "1": {
+            "data_name": "FILLER-X-100",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 0,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "2": {
+            "data_name": "VOLUME-ID",
+            "disp_length": 6,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 1,
+            "picture": "X(6)",
+            "storage_length": 6
+        },
+        "3": {
+            "data_name": "FILLER-X-101",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 7,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "4": {
+            "data_name": "DATASET-ID",
+            "disp_length": 44,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 9,
+            "picture": "X(44)",
+            "storage_length": 44
+        },
+        "5": {
+            "data_name": "FILLER-X-102",
+            "disp_length": 197,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 53,
+            "picture": "X(197)",
+            "storage_length": 197
+        }
+    }
+}
