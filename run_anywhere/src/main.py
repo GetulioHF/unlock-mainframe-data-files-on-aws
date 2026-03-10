@@ -42,10 +42,10 @@ def main():
 
     ## Convert TEST.EMP.RECORD.FILE.dat to csv using copybook EMPREC01.cpy
 ##    input_copybook = os.path.join(project_dir, 'mfdata', 'copybook', 'AFMLIST.cpy')
-##    input_datafile = os.path.join(project_dir, 'mfdata', 'input', 'AFMLIST.TXT')
+##    input_datafile = os.path.join(project_dir, 'mfdata', 'input', 'AFMLIST_COMPLETE.txt')
 ##    output_datafile = os.path.join(project_dir, 'mfdata', 'output', 'TEST.EMP.RECORD.FILE.csv')
     input_copybook = os.path.join(project_dir, 'mfdata', 'copybook', 'AFMLIST.cpy')
-    input_datafile = os.path.join(project_dir, 'mfdata', 'input', 'AFMLIST.dat')
+    input_datafile = os.path.join(project_dir, 'mfdata', 'input', 'AFMLIST_COMPLETE.dat')
     output_datafile = os.path.join(project_dir, 'mfdata', 'output', 'AFMLIST.csv')
     convert_cobdata2csv(input_copybook, input_datafile, output_datafile)
 
