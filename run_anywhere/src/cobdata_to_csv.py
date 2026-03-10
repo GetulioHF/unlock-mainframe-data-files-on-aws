@@ -71,7 +71,7 @@ def handle_non_printable(data, mask):
 def convert_mfdata_to_csv(input_datafile, reclen, layout, output_datafile):
 
     cobolFile = open(input_datafile, 'rb')
-    outFile = csv.writer(open(output_datafile, 'w', newline=''), delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
+    outFile = csv.writer(open(output_datafile, 'w', newline=''), delimiter=';', quoting=csv.QUOTE_NONNUMERIC)
 
     header_list = []
     for name, start, size, disp_size, usage, sign, scale in layout:

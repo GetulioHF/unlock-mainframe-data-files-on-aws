@@ -1,9 +1,37 @@
-      * 
       * GFS AFMLIST sample
-      * 
-       01 EMP-RECORD.
-         05 FILLER                      PIC X(1).
-         05 VOLUME-ID                   PIC X(6).
-         05 FILLER                      PIC X(2).
-         05 DATASET-ID                  PIC X(44).
-         05 FILLER                      PIC X(197).
+       01 INPUT-RECORD.
+           05  TIPO-REG     PIC X(1).      
+           05  VOLSER       PIC X(6).   
+           05  FSEQ         PIC X(2).    
+           05  DSNAME       PIC X(44).     
+           05  FLAG         PIC X(1).    
+           05  CRDATE       PIC X(4).          
+           05  EXDATE       PIC X(4).          
+           05  CRIT-NUM     PIC X(2).    
+           05  DIAS         PIC X(2).  
+           05  UNID-RET     PIC X(1).     
+           05  FILLER       PIC X(5). 
+           05  DEVCODE      PIC X(4).     
+           05  DEVTYPE      PIC X(8).     
+           05  COFRDSN      PIC X(44).     
+           05  FSQ          PIC X(2).    
+           05  VSQ          PIC X(2).
+           05  FILLER       PIC X(1).
+           05  MFL          PIC X(1).
+           05  RELI         PIC X(1).
+           05  RELS         PIC X(1).
+           05  OWNER        PIC X(8).
+           05  CATDSN       PIC X(44).
+           05  VOLCNT       PIC X(2).
+           05  CRTIME       PIC X(4).
+           05  GDGACT       PIC X(2).
+           05  FILLER       PIC X(4).
+           05  PREVVOL      PIC X(6).
+           05  NEXTVOL      PIC X(6).
+           05  GDGPOS       PIC X(2).
+           05  GDGNUM       PIC X(2).
+           05  GDGAFM       PIC X(2).
+           05  GDGOCCUP     PIC X(2).
+           05  GDGLIM       PIC X(2).
+           05  GDGCRIT      PIC X(2).
+           05  FILLER       PIC X(26).

@@ -1,7 +1,7 @@
 {
     "AFMLIST": {
         "0": {
-            "data_name": "EMP-RECORD",
+            "data_name": "INPUT-RECORD",
             "group": true,
             "level": "01",
             "level_depth_9": 1,
@@ -10,7 +10,7 @@
             "offset": 0
         },
         "1": {
-            "data_name": "FILLER-X-100",
+            "data_name": "TIPO-REG",
             "disp_length": 1,
             "level": "05",
             "level_depth_9": 2,
@@ -21,7 +21,7 @@
             "storage_length": 1
         },
         "2": {
-            "data_name": "VOLUME-ID",
+            "data_name": "VOLSER",
             "disp_length": 6,
             "level": "05",
             "level_depth_9": 2,
@@ -32,7 +32,7 @@
             "storage_length": 6
         },
         "3": {
-            "data_name": "FILLER-X-101",
+            "data_name": "FSEQ",
             "disp_length": 2,
             "level": "05",
             "level_depth_9": 2,
@@ -43,7 +43,7 @@
             "storage_length": 2
         },
         "4": {
-            "data_name": "DATASET-ID",
+            "data_name": "DSNAME",
             "disp_length": 44,
             "level": "05",
             "level_depth_9": 2,
@@ -54,15 +54,345 @@
             "storage_length": 44
         },
         "5": {
-            "data_name": "FILLER-X-102",
-            "disp_length": 197,
+            "data_name": "FLAG",
+            "disp_length": 1,
             "level": "05",
             "level_depth_9": 2,
             "level_depth_x": "01-05",
             "numeric": false,
             "offset": 53,
-            "picture": "X(197)",
-            "storage_length": 197
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "6": {
+            "data_name": "CRDATE",
+            "disp_length": 4,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 54,
+            "picture": "X(4)",
+            "storage_length": 4
+        },
+        "7": {
+            "data_name": "EXDATE",
+            "disp_length": 4,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 58,
+            "picture": "X(4)",
+            "storage_length": 4
+        },
+        "8": {
+            "data_name": "CRIT-NUM",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 62,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "9": {
+            "data_name": "DIAS",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 64,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "10": {
+            "data_name": "UNID-RET",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 66,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "11": {
+            "data_name": "FILLER-X-100",
+            "disp_length": 5,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 67,
+            "picture": "X(5)",
+            "storage_length": 5
+        },
+        "12": {
+            "data_name": "DEVCODE",
+            "disp_length": 4,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 72,
+            "picture": "X(4)",
+            "storage_length": 4
+        },
+        "13": {
+            "data_name": "DEVTYPE",
+            "disp_length": 8,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 76,
+            "picture": "X(8)",
+            "storage_length": 8
+        },
+        "14": {
+            "data_name": "COFRDSN",
+            "disp_length": 44,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 84,
+            "picture": "X(44)",
+            "storage_length": 44
+        },
+        "15": {
+            "data_name": "FSQ",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 128,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "16": {
+            "data_name": "VSQ",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 130,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "17": {
+            "data_name": "FILLER-X-101",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 132,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "18": {
+            "data_name": "MFL",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 133,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "19": {
+            "data_name": "RELI",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 134,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "20": {
+            "data_name": "RELS",
+            "disp_length": 1,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 135,
+            "picture": "X(1)",
+            "storage_length": 1
+        },
+        "21": {
+            "data_name": "OWNER",
+            "disp_length": 8,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 136,
+            "picture": "X(8)",
+            "storage_length": 8
+        },
+        "22": {
+            "data_name": "CATDSN",
+            "disp_length": 44,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 144,
+            "picture": "X(44)",
+            "storage_length": 44
+        },
+        "23": {
+            "data_name": "VOLCNT",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 188,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "24": {
+            "data_name": "CRTIME",
+            "disp_length": 4,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 190,
+            "picture": "X(4)",
+            "storage_length": 4
+        },
+        "25": {
+            "data_name": "GDGACT",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 194,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "26": {
+            "data_name": "FILLER-X-102",
+            "disp_length": 4,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 196,
+            "picture": "X(4)",
+            "storage_length": 4
+        },
+        "27": {
+            "data_name": "PREVVOL",
+            "disp_length": 6,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 200,
+            "picture": "X(6)",
+            "storage_length": 6
+        },
+        "28": {
+            "data_name": "NEXTVOL",
+            "disp_length": 6,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 206,
+            "picture": "X(6)",
+            "storage_length": 6
+        },
+        "29": {
+            "data_name": "GDGPOS",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 212,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "30": {
+            "data_name": "GDGNUM",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 214,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "31": {
+            "data_name": "GDGAFM",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 216,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "32": {
+            "data_name": "GDGOCCUP",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 218,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "33": {
+            "data_name": "GDGLIM",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 220,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "34": {
+            "data_name": "GDGCRIT",
+            "disp_length": 2,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 222,
+            "picture": "X(2)",
+            "storage_length": 2
+        },
+        "35": {
+            "data_name": "FILLER-X-103",
+            "disp_length": 26,
+            "level": "05",
+            "level_depth_9": 2,
+            "level_depth_x": "01-05",
+            "numeric": false,
+            "offset": 224,
+            "picture": "X(26)",
+            "storage_length": 26
         }
     }
 }
